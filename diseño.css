@@ -25,7 +25,7 @@ body {
     right: 0;
     top: 0;
     font-family: 'Manrope', Arial, Helvetica, sans-serif; 
-    padding: 0 40px; 
+    padding: 0 80px; 
     height: 24px;
     background-color: #000000;
     }
@@ -67,7 +67,7 @@ nav .list a {
     height: 56px;
     background-color: #f1f3f5;
     color: #000000;
-    padding: 0px 40px;
+    padding: 0px 80px;
     align-items: center;
     font-family: 'Manrope', Arial, Helvetica, sans-serif; 
     font-size: 14px;
@@ -99,7 +99,14 @@ nav .list a {
     justify-content: flex-start;
     align-items: center;
     font-weight: bold;
-    /* padding-top: 4px; */
+}
+
+.right-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .ul-list {
@@ -121,7 +128,7 @@ nav .list a {
 .hover-nav {
     position: relative;
     display: inline-block;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .hover-nav::after {
@@ -133,7 +140,7 @@ nav .list a {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 17px);
     transition: all 300ms;
     opacity: 0; /* Agregado para ocultar la línea inicialmente */
 }
@@ -141,6 +148,71 @@ nav .list a {
 .hover-nav:hover::after {
     width: 100%;
     opacity: 1; /* Mostrar la línea al hacer hover */
+}
+
+/* SECOND NAVIGATION */
+
+.second-navigation {
+    background-color: #ffffff;
+    height: 76px;
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.content-second-navigation {
+    display: flex;
+    font-size: 16px;
+    font-family: 'Manrope', Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+}
+
+.content-second-navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ul-content li a{
+    pointer-events: none    ;
+}
+
+.body-second-navigation {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: 30px;
+    font-size: 16px;
+    font-family: 'Manrope', Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+}
+
+.body-second-navigation .ul-content {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.ul-content li {
+    padding: 0 20px;
+}
+
+.hover-second-nav-two{
+    font-weight: 300;
+    color: #8d8d8d;
+}
+
+.hover-second-nav-two:hover{
+    cursor: pointer;
+    color: #000000;
+}
+
+.hover-second-nav{
+    cursor: default;
+    letter-spacing: -0.2px;
+    border-bottom: 2px solid #000000;
+    padding: 0 4px;
 }
 
 /*--------------------------------------*/
