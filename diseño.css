@@ -56,7 +56,6 @@ nav .list a {
 .contenedor {
     /* max-width: 120rem; */
     margin: 0 auto;
-
 }
 
 .navbar-principal {
@@ -219,7 +218,7 @@ nav .list a {
 /*CARROUSSEL*/
 
 body {
-    background-color: #ebf0f3;
+    background-color: #f5f5f5;
 }
 html {
     box-sizing: border-box;
@@ -456,4 +455,87 @@ html {
     margin-bottom: 10px;
 }
 
-    
+/* SPACE */
+
+.space {
+    height: 6.25vw;
+}
+
+/* PRODUCTOS */
+
+.productos-main {
+    padding: 0 80px;
+}
+
+.productos-banner {
+    width: 100%;
+    display: flex;
+}
+
+
+.producto-left {
+    margin-right: 40px;
+}
+
+.producto-left, .producto-right{
+    height: 519.75px;
+    width: 50%;
+    background: #ffffff;
+    padding: 3.385417vw 0 3.385417vw 3.125vw;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.product-name {
+    font-size: 1.458333vw;
+    font-family: 'Manrope', Arial, Helvetica, sans-serif; 
+}
+
+.product-sell-point {
+    margin-top: 2.604167vw;
+}
+
+.product-sell-point p {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif; 
+    font-size: 0.833333vw;
+    line-height: 1;
+    color: #00000080;
+}
+
+.btn-producto {
+    font-family: 'Manrope', Arial, Helvetica, sans-serif; 
+    padding: 0.520833vw 2.604167vw;
+    padding: 15px 30px;
+    color: white;
+    background-color: black;
+    border-radius: 5vw;
+    margin-right: 0;
+    font-weight: 700;
+    font-size: 13px;
+    transition: all .3s;
+    position: absolute;
+    left: 60px;
+    margin-top: 180px;
+}
+
+.img-producto-left {
+    width: 24.479167vw;
+    position: absolute;
+    left: 22.395833vw;
+    top: 7.416667vw;
+    transition-duration: 1s;
+}
+
+.img-producto-left img{
+    width: 100%;
+    background-size: cover;
+}
+
+.img-producto-left:hover img{
+    cursor: pointer;
+    transform: scale(1.04);
+}
+
+.space-productos {
+    height: 3vw
+}
