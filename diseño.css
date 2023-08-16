@@ -144,6 +144,8 @@ nav .list a {
 }
 
 /*--------------------------------------*/
+/*CARROUSSEL*/
+
 body {
     background-color: #ebf0f3;
 }
@@ -151,6 +153,8 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
+
+
 .contenedor2 {
     max-width: 120rem;
     margin: 0 auto;
@@ -159,48 +163,76 @@ html {
     box-sizing: inherit;
 }
 
-.producto img {
+.producto-blog img {
     max-width: 100%;
     display: block;
 }
 
-.contenido-principal {
-    padding-top: 0;
+.grid-blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
 }
 
-.listado-productos {
+.producto-blog:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 7;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    margin: 4.166667vw;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.listado-productos-blog {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: 2rem;
     row-gap: 2rem;
 }
 
-.producto {
-    background-color: #ffffff;
+
+
+.txt{
+    width: 40%;
+    position: absolute;
+    left: 50px;
+    top: 160px;
+    display: flex;
+}
+.txt img{
+    width: auto;
+    position: absolute;
+    /* transform: translateY(60%); */
+    transform: translateX(28%);
+    height: 22px;
+    margin-bottom: 9.6px;
+    margin: 0px 0px 7.77px;
+}
+.txt h2{
+    position: absolute;
+    left: 98px;
+    top: 30px;
+    font-size: 35.85px;
+    font-family: Manrope;
+    font-weight: 500;
 }
 
-.texto-producto {
-    text-align: center;
-    color: #000000;
-    padding: 2rem;
-}
-
-.texto-producto h3 {
+.para-margen {
     margin: 0;
 }
 
-.texto-producto p {
-    margin: 0 0 .5rem 0;
-}
-
-.texto-producto .precio {
-    font-size: 2rem;
-
-}
-
-.producto:nth-child(1) {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+.btns {
+    /* display: flow-root; */
+    padding: 0.520833vw 2.604167vw;
+    padding: 15px 27px;
+    color: white;
+    background-color: black;
+    border-radius: 5vw;
+    margin-right: 0;
+    font-weight: 300;
+    font: 10.5219px;
+    transition: all .3s;
+    position: absolute;
+    left: 98px;
+    top: 200px;
 }
