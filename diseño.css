@@ -454,8 +454,7 @@ html {
     margin-top: 0;
     margin-bottom: 10px;
 }
-
-/* SPACE */
+    /* SPACE */
 
 .space {
     height: 6.25vw;
@@ -539,3 +538,47 @@ html {
 .space-productos {
     height: 3vw
 }
+
+/* FOOTER 1*/
+
+.breadcrumbs {
+    background-color: #ffffff;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.ul-content li a{
+    pointer-events: none    ;
+}
+
+.body-second-footer {
+    display: flex;
+    position: relative;
+    margin-right: 30px;
+    font-size: 17px;
+    font-family: 'Manrope', Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+}
+
+.body-second-footer .breadcrumbs__link {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.breadcrumbs__link li {
+    padding: 0 20px;
+}
+
+.hover-second-foot{
+    font-weight: 400;
+    color: #8d8d8d;
+}
+
+.hover-second-foot:hover{
+    cursor: pointer;
+    color: #000000;
+}
+
