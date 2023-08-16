@@ -219,7 +219,7 @@ nav .list a {
 /*CARROUSSEL*/
 
 body {
-    background-color: #f5f5f5;
+    background-color: #ebf0f3;
 }
 html {
     box-sizing: border-box;
@@ -276,15 +276,15 @@ html {
     position: absolute;
     /* transform: translateY(60%); */
     transform: translateX(28%);
-    height: 22px;
+    height: 30px;
     margin-bottom: 9.6px;
-    margin: 50px 0px 7.77px;
+    margin: 100px 0px 7.77px;
 }
 .txt h2{
     position: absolute;
-    left: 98px;
-    top: 80px;
-    font-size: 35.85px;
+    left: 130px;
+    top: 170px;
+    font-size: 48px;
     font-family: Manrope;
     font-weight: 500;
 }
@@ -295,19 +295,82 @@ html {
 
 .btns {
     /* display: flow-root; */
+    font-family: 'Manrope', Arial, Helvetica, sans-serif; 
     padding: 0.520833vw 2.604167vw;
-    padding: 15px 27px;
+    padding: 15px 50px;
     color: white;
     background-color: black;
     border-radius: 5vw;
     margin-right: 0;
     font-weight: 300;
-    font: 10.5219px;
+    font-size: 13px;
     transition: all .3s;
     position: absolute;
-    left: 98px;
-    top: 250px;
+    left: 125px;
+    top: 400px;
 }
+
+/* PUNTOS DEL CARRUSEL */
+
+.inline-puntos {
+    display: inline;
+}
+
+.swiper-pagination {
+    display: block;
+    left: 0px;
+    top: 600px;
+}
+
+.punto-pagination {
+    position: absolute;
+    top: 800px;
+    left: 10%;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    margin-left: -4px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.punto-pagination-dos {
+    position: absolute;
+    top: 800px;
+    left: 12%;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    margin-left: -4px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.punto-pagination-tres {
+    position: absolute;
+    top: 800px;
+    left: 14%;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    margin-left: -4px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.punto-pagination-cuatro {
+    position: absolute;
+    top: 800px;
+    left: 16%;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    margin-left: -4px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+/* TEXTO DESPUES DEL CARRUSEL */
 
 .banner-title h2 {
     font-size: 45.025px;
@@ -393,7 +456,4 @@ html {
     margin-bottom: 10px;
 }
 
-    grid-column-start: 1;
-    grid-column-end: 7;
-    display: grid;
     
