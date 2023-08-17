@@ -166,7 +166,20 @@ nav .list a {
     padding: 0px 80px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 0.1px solid #e1e1e1;
+}
+
+.inline-nav {
+    display: flex;
+}
+
+.li-nav {
+    opacity: 0.6;
+}
+
+.li-nav:hover {
+    cursor: pointer;
+    opacity: 0.9;
 }
 
 .content-second-navigation {
@@ -241,86 +254,6 @@ html {
 }
 *, *:before, *:after {
     box-sizing: inherit;
-}
-
-.producto-blog img {
-    max-width: 100%;
-    display: block;
-}
-
-.grid-blog {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-}
-
-.producto-blog:nth-child(1) {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    display: grid;
-    margin: 4.166667vw;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.listado-productos-blog {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2rem;
-    row-gap: 2rem;
-}
-
-
-
-.txt{
-    width: 40%;
-    position: absolute;
-    left: 50px;
-    top: 160px;
-    display: flex;
-}
-.txt img{
-    width: auto;
-    position: absolute;
-    /* transform: translateY(60%); */
-    transform: translateX(28%);
-    height: 30px;
-    margin-bottom: 9.6px;
-    margin: 100px 0px 7.77px;
-}
-.txt h2{
-    position: absolute;
-    left: 130px;
-    top: 170px;
-    font-size: 48px;
-    font-family: Manrope;
-    font-weight: 500;
-}
-
-.para-margen {
-    margin: 0;
-}
-
-.btns {
-    /* display: flow-root; */
-    font-family: 'Manrope', Arial, Helvetica, sans-serif; 
-    padding: 0.520833vw 2.604167vw;
-    padding: 15px 50px;
-    color: white;
-    background-color: black;
-    border-radius: 5vw;
-    margin-right: 0;
-    font-weight: 300;
-    font-size: 13px;
-    transition: all .3s;
-    position: absolute;
-    left: 125px;
-    top: 400px;
-}
-
-.btns:hover {
-    opacity: 0.7;
-    cursor: pointer;
 }
 
 /* PUNTOS DEL CARRUSEL */
@@ -600,6 +533,11 @@ html {
     color: #8d8d8d;
 }
 
+.hover-second-foot#diagonal{
+    font-weight: 400;
+    color: #8d8d8d;
+}
+
 .hover-second-foot:hover{
     cursor: pointer;
     color: #000000;
@@ -784,4 +722,103 @@ hr {
 
 .lenguaje-texto i{
     margin-left: 10px;
+}
+
+/* CARRUSEL */
+
+#carrusel-caja {
+    -moz-animation: automatizacion 15s infinite linear;
+    -o-animation: automatizacion 15s infinite linear;
+    -webkit-animation: automatizacion 15s infinite linear;
+    animation: automatizacion 15s infinite linear;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    height: 700px;
+    width: 400%;
+}
+#carrusel-contenido {
+    margin: 0 80px;
+    overflow: hidden;
+    text-align: left;
+}
+.imagenes{
+    height: 700px;
+    width: 100%;
+}
+.carrusel-elemento {
+    float: left;
+    width: 25.00%;
+}
+
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
 }

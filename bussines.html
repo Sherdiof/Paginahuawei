@@ -5,8 +5,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="diseño.css">
-    <link rel="shortcut icon" href="images/ASTER-2.png">
+    <link rel="stylesheet" href="estilos/diseño.css">
+    <link rel="shortcut icon" href="imagenes/ASTER-2.png">
     <!-- ICONOS -->
     <script src="https://kit.fontawesome.com/4bf7a4a2a9.js" crossorigin="anonymous"></script>
     <!-- FUENTES -->
@@ -29,7 +29,7 @@
         <div class="contenedor">
             <div class="navbar-principal">
                 <a href="" title="logo" class="logo">
-                    <img src="images/logo-navegacion.png" alt="">
+                    <img src="imagenes/logo-navegacion.png" alt="">
                 </a>
 
                 <nav class="main-nav">
@@ -84,9 +84,24 @@
 
         <div class="contenedor second-navigation">
             <div class="content-second-navigation">
-                    <ul class="ul-content">
+                    <ul class="ul-content inline-nav">
                         <li>
-                            <a title="business" href="#">Business</a>
+                            <a  title="business" href="#">Business</a>
+                        </li>
+                        <li>
+                            <a title="business" href="#">|</a>
+                        </li>
+                        <li class="li-nav">
+                            <a title="business" href="#">Inicio</a>
+                        </li>
+                        <li class="li-nav">
+                            <a title="business" href="#">Smartphones</a>
+                        </li>
+                        <li class="li-nav">
+                            <a title="business" href="#">Community</a>
+                        </li>
+                        <li class="li-nav">
+                            <a title="business" href="#">Login</a>
                         </li>
                     </ul>
             </div>
@@ -105,23 +120,25 @@
     </header>
 
     <main class="contenedor contenido-principal-blog">
-        <div class="listado-productos-blog">
-          
-            <div class="producto-blog">
-               <img src="images/carousel-notebook.jpg" alt="Producto 2">
-                <div class="contenedor-navegacion"></div><br>
-                 
-                <div class="para-margen">
-                    <div class="txt">
-                        <img src="images/huawei-matebook.svg">
-                        <h2>Superior Performance,<br> Better Business</h2>
-                            <a class="btns">Learn More</a>
-                    </div>
+
+        <div id="carrusel-contenido">
+            <div id="carrusel-caja">
+                <div class="carrusel-elemento">
+                    <img class="imagenes" src="imagenes/hawei-notebook1.png">
+                </div>
+                <div class="carrusel-elemento">
+                    <img class="imagenes" src="imagenes/hawei-pc1.png">
+                </div>
+                <div class="carrusel-elemento">
+                    <img class="imagenes" src="imagenes/Huawei-mate1.png">
+                </div>
+                <div class="carrusel-elemento">
+                    <img class="imagenes" src="imagenes/Huawei-Matepad1.png">
                 </div>
             </div>
         </div>
 
-        <div class="inline-puntos">
+        <!-- <div class="inline-puntos">
             <div class="swiper-pagination">
                 <span class="punto-pagination"></span>
             </div>
@@ -134,7 +151,7 @@
             <div class="swiper-pagination">
                 <span class="punto-pagination-cuatro"></span>
             </div>
-        </div>
+        </div> -->
     </main>
 
 
@@ -148,7 +165,7 @@
         <div class="listado-productos">
           
            <div class="producto">
-               <img src="images/huawei-business-innovation.jpeg" alt="Innovation">
+               <img src="imagenes/huawei-business-innovation.jpeg" alt="Innovation">
                <div class="texto-producto">
                  <p>HUAWEI Consumer BG enters enterprise market with new lineup of office products. HUAWEI would use its hardware and software ecosystems as dual pillars, bringing high-quality experience 
                     and innovation capabilities in the consumer product field to the commercial field, to support a growing range of versatile office products that work seamlessly with a wide range of smart
@@ -172,7 +189,7 @@
                 </div>
                 <a class="btn-producto">Learn More</a>
                 <div class="img-producto-left">
-                    <img src="images/impresora.png" alt="">
+                    <img src="imagenes/impresora.png" alt="">
                 </div>
             </div>
             <br><br>
@@ -185,7 +202,7 @@
                 </div>
                 <a class="btn-producto">Learn More</a>
                 <div class="img-producto-left">
-                    <img src="images/reloj.png" alt="">
+                    <img src="imagenes/reloj.png" alt="">
                 </div>
                 </div>
             </div>
@@ -202,7 +219,7 @@
                 </div>
                 <a class="btn-producto">Learn More</a>
                 <div class="img-producto-left">
-                    <img src="images/laptop1.png" alt="">
+                    <img src="imagenes/laptop1.png" alt="">
                 </div>
             </div>
             <br><br>
@@ -215,7 +232,7 @@
                 </div>
                 <a class="btn-producto">Learn More</a>
                 <div class="img-producto-left">
-                    <img src="images/laptop2.png" alt="">
+                    <img src="imagenes/laptop2.png" alt="">
                 </div>
                 </div>
             </div>
@@ -234,7 +251,7 @@
                 <li>
                     <a class="hover-second-foot" href="#">Home</a>
                 </li>
-                <li class="hover-second-foot">
+                <li class="hover-second-foot" id="diagonal">
                     <a href="#">/</a>
                 </li>
                 <li class="hover-second-foot">
