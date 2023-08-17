@@ -732,10 +732,10 @@ hr {
     -webkit-animation: automatizacion 15s infinite linear;
     animation: automatizacion 15s infinite linear;
     -webkit-transition: all 0.75s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -moz-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
     height: 700px;
     width: 400%;
 }
@@ -754,71 +754,96 @@ hr {
 }
 
 @-moz-keyframes automatizacion {
-    0% {
+     0% {
         margin-left: 0;
     }
-    30% {
+    20% {
         margin-left: 0;
     }
-    35% {
+    25% {
         margin-left: -100%;
     }
-    65% {
+    45% {
         margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
     }
     70% {
         margin-left: -200%;
     }
-    95% {
-        margin-left: -200%;
+    75% {
+        margin-left: -300%;
     }
+    
+    99% {
+        margin-left: -300%;
+    }
+    
     100% {
         margin-left: 0;
     }
 }
 @-webkit-keyframes automatizacion {
-    0% {
+     0% {
         margin-left: 0;
     }
-    30% {
+    20% {
         margin-left: 0;
     }
-    35% {
+    25% {
         margin-left: -100%;
     }
-    65% {
+    45% {
         margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
     }
     70% {
         margin-left: -200%;
     }
-    95% {
-        margin-left: -200%;
+    75% {
+        margin-left: -300%;
     }
+    
+    99% {
+        margin-left: -300%;
+    }
+    
     100% {
         margin-left: 0;
     }
 }
 @keyframes automatizacion {
-    0% {
+     0% {
         margin-left: 0;
     }
-    30% {
+    20% {
         margin-left: 0;
     }
-    35% {
+    25% {
         margin-left: -100%;
     }
-    65% {
+    45% {
         margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
     }
     70% {
         margin-left: -200%;
     }
-    95% {
-        margin-left: -200%;
+    75% {
+        margin-left: -300%;
     }
+    
+    99% {
+        margin-left: -300%;
+    }
+    
     100% {
         margin-left: 0;
     }
 }
+
